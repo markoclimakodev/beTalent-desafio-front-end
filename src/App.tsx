@@ -1,11 +1,14 @@
 import './App.css'
+import { Header } from './components/header'
 
 function App() {
 
   return (
-    <>
-      <h1>Stating Project</h1>
-    </>
+    <div className='app-container'>
+      <Header />
+      <section className='table-section'>
+      </section>
+    </div>
   )
 }
 

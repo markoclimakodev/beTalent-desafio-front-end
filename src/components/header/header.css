@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    height: 4rem; 
+    background-color: var(--color-white-neutral);
+    display: flex;
+    padding: 1.25rem 0.75rem ; 
+    box-shadow: var(--box-shadow-custom);
+    position: sticky;
+    top: 0;
+
+    & .logo {
+        height: 2.18rem;
+    }
+  }
+  

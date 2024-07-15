@@ -1,28 +1,21 @@
-import './App.css'
+import { Header } from './components/Header'
+import Search from './components/Search';
 import { EmployeeTable } from './components/EmployeeTable'
-import { Header } from './components/header'
-import {useEmployees} from './hooks/useEmployees';
+import './App.css'
+import { AppProvider } from './context/AppProvider';
 
 function App() {
-  const {  filteredEmployees, loading, error } = useEmployees();
-
-
-
-  if (loading) {
-    return <p>Carregando...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
-  }
 
   return (
-    <div className='app-container'>
-      <Header />
-      <section className='table-section'>
-        <EmployeeTable filteredEmployees={filteredEmployees}/>
-      </section>
-    </div>
+    <AppProvider>
+      <div className='app-container'>
+        <Header />
+        <Search />
+        <section className='table-section'>
+          <EmployeeTable />
+        </section>
+      </div>
+    </AppProvider>
   )
 }
 

@@ -1,5 +1,7 @@
-export function formatPhoneNumber(phoneNumber: string) {
+export function formatPhoneNumber(phoneNumber: string): string {
     if (!phoneNumber) return 'N/A';
+
+    if (phoneNumber.length !== 13) return 'Número de telefone inválido.';
 
     const country = phoneNumber.slice(0, 2);
     const area = phoneNumber.slice(2, 4);

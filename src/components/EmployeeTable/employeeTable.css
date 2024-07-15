@@ -1,6 +1,7 @@
 .employeeTable {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
 }
 
@@ -106,6 +107,14 @@
     & strong {
         font-weight: 500;
     }
+}
+
+.loading,
+.noResultsFound,
+.fetchError {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {

@@ -5,7 +5,6 @@ import { Employee } from '../../types/Employee';
 import { formatDate } from '../../helpers/formatDate';
 import { formatPhoneNumber } from '../../helpers/formatPhoneNUmber';
 
-
 interface TableRowProps {
   employee: Employee;
 }
@@ -20,9 +19,6 @@ export function TableRow({ employee }: TableRowProps) {
 
   const formatedDate = formatDate(admission_date);
   const formatedPhone = formatPhoneNumber(phone);
-
-
-
 
   return (
     <>

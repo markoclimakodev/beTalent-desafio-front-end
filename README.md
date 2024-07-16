@@ -20,8 +20,8 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 ```bash
 # Clone este repositório:
-git clone https://github.com/markoclimakodev/Be-Talent-desafio-front-end
-cd Be-Talent-desafio-front-end-main
+git clone git@github.com:markoclimakodev/beTalent-desafio-front-end.git
+cd beTalent-desafio-front-end-main
 
 # Instale o json-server globalmente (caso ainda não tenha instalado):
 yarn global add json-server

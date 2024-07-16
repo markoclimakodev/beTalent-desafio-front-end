@@ -1,35 +1,18 @@
 import { useContext } from 'react';
 import { AppContext } from '../../context/AppContext';
 import { TableRow } from './TableRow';
+import { Loading } from './Loading';
+import { Error } from './Error';
+import { NoResult } from './NoResult';
 
 export function TableBody() {
   const { employeesList, loading, error } = useContext(AppContext);
 
-  if (loading) {
-    return (
-      <section className="loading">
-          <span >Carrgando...</span>
-      </section>
-    );
-  }
+  if (loading) return <Loading/>
 
-  if (error) {
-    return (
-      <tbody className="fetchError">
-        <tr>
-          <td>Ocorreu um erro ao carregar os dados. Por favor, tente novamente mais tarde.</td>
-        </tr>
-      </tbody>
-    );
-  }
+  if (error)  return <Error/>
 
-  if (employeesList.length === 0) {
-    return (
-      <section className="noResultsFound">
-        <span>Nenhum resultado encontrado.</span>
-      </section>
-    );
-  }
+  if (employeesList.length === 0) return <NoResult/>
 
   return (
     <tbody className="tableBody">

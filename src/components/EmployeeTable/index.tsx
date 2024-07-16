@@ -1,6 +1,6 @@
-import './employeeTable.css';
-import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
+import { TableBody } from './TableBody';
+import './employeeTable.css';
 
 export function EmployeeTable() {
     return (

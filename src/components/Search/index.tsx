@@ -1,7 +1,8 @@
-import searchIcon from '../../assets/search.svg';
-import { AppContext } from '../../context/AppContext';
 import { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
 import './search.css';
+
+import searchIcon from '../../assets/search.svg';
 
 function Search() {
     const { updateSearchQuery } = useContext(AppContext);

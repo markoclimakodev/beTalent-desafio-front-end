@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, ReactNode } from "react";
 import { useEmployees } from "../hooks/useEmployees";
 import { Employee } from "../types/Employee";
 import { containsSearchTerm } from "../helpers/containsSearchTerm";
 import { AppContext } from "./AppContext";
 import { AppContextType } from "../types/AppContext";
-import { AppProviderProps } from "../types/AppProviderProps";
+
+interface AppProviderProps {
+    children: ReactNode;
+}
 
 export function AppProvider({ children }: AppProviderProps) {
     const { employees, loading, error } = useEmployees();
@@ -28,7 +31,6 @@ export function AppProvider({ children }: AppProviderProps) {
 
         filterEmployees(searchQuery);
     }, [searchQuery, employees]);
-
 
     const contextValue: AppContextType = {
         searchQuery,

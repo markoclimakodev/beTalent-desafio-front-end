@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import chevronDown from '../../assets/chevronDown.svg';
-import chevronUp from '../../assets/chevronUp.svg';
 import { Employee } from '../../types/Employee';
 import { formatDate } from '../../helpers/formatDate';
 import { formatPhoneNumber } from '../../helpers/formatPhoneNUmber';
+import chevronDown from '../../assets/chevronDown.svg';
+import chevronUp from '../../assets/chevronUp.svg';
 
 interface TableRowProps {
   employee: Employee;

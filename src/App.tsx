@@ -1,8 +1,8 @@
-import { Header } from './components/Header'
-import Search from './components/Search';
-import { EmployeeTable } from './components/EmployeeTable'
-import './App.css'
 import { AppProvider } from './context/AppProvider';
+import { Header } from './components/Header';
+import { EmployeeTable } from './components/EmployeeTable';
+import Search from './components/Search';
+import './App.css';
 
 function App() {
 

@@ -6,7 +6,8 @@ O objetivo desse desafio era construir uma aplicação responsiva que exibe dado
 
 ## Mockup
 
-A aplicação foi desenvolvida utilizando como base o mockup fornecido pela BeTalent. Você pode acessá-lo [aqui](https://www.figma.com/file/yw6th52zE9bubewc6ayTg5/Teste-T%C3%A9cnico-Front-End-Be.?type=design&node-id=1%3A4&mode=dev&t=vVxs9eyKybrYmq4Z-1).
+A aplicação foi desenvolvida utilizando como base o mockup fornecido pela [BeTalent](https://betalent.tech/). Você pode acessá-lo [aqui](https://www.figma.com/file/yw6th52zE9bubewc6ayTg5/Teste-T%C3%A9cnico-Front-End-Be.?type=design&node-id=1%3A4&mode=dev&t=vVxs9eyKybrYmq4Z-1).
+
 
 ## Pré-requisitos
 - Git
